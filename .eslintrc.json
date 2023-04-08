@@ -1,3 +1,17 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": ["next/core-web-vitals", "plugin:jsx-a11y/recommended", "plugin:react/recommended"],
+	"plugins": ["react", "jsx-a11y"],
+	"settings": {
+		"jsx-a11y": {
+			"components": {
+				"Image": "img",
+				"Avatar": "img",
+				"Button": "button",
+				"Input": "input",
+				"Switch": "input",
+				"Link": "a",
+				"FormLabel": "label"
+			}
+		}
+	}
 }
